@@ -1,10 +1,21 @@
 export default function Home() {
+  const url =
+    "https://lifeatnissan.s3.ap-southeast-1.amazonaws.com/20s_2766.mp4";
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Life at Nissan</h1>
-        <p className="text-lg text-gray-700">This is page for VDO Gachapon</p>
-      </div>
+    <div
+      style={{
+        display: "flex",
+        alignContent: "center",
+        justifyContent: "center",
+        height: "100vh",
+        overflow: "hidden",
+        background: "black",
+      }}
+    >
+      <video className="fullscreen-video" controls>
+        <source src={url} />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 }
