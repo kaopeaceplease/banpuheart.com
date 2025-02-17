@@ -29,6 +29,11 @@ export default function Page({
           className="fullscreen-video"
           controls
           onError={() => setVideoError(true)}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+          }}
         >
           <source src={url} />
           Your browser does not support the video tag.
