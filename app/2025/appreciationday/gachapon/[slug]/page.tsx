@@ -9,7 +9,7 @@ export default function Page({
 }) {
   const [videoError, setVideoError] = useState(false)
   const mappedSlug = slug.toLowerCase()
-  const url = `https://lifeatnissan.s3.ap-southeast-1.amazonaws.com/${mappedSlug}.mp4`
+  const url = `https://banpuheart.s3.ap-southeast-2.amazonaws.com/${mappedSlug}.mp4`
 
   return (
     <div
